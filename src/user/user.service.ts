@@ -23,6 +23,7 @@ export class UserService {
 
     return this.userRepository.save({
         ...createdUser,
+        typeUser: 1,
         password:passwordHash
     })
   }
